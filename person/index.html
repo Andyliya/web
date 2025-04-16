@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy的个人介绍</title>
+
+    <!--
+      - 引入图标
+    -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+    <!--
+      - 引入Css
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--
+      - 引入字体
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="overlay"></div>
+<main>
+    <!------------------------------------------------------个人信息------------------------------------------------------>
+    <aside class="sidebar" data-sidebar>
+
+        <div class="sidebar-info">
+
+            <figure class="avatar-box">
+                <img src="./assets/images/avatar-0.png" alt="Andy" width="100">
+            </figure>
+
+            <div class="info-content">
+                <h1 class="name" title="Andy">白曜榜</h1>
+
+                <p class="title">JAVA 开发者</p>
+            </div>
+
+            <button class="info_more-btn" onclick="unShowImg()" data-sidebar-btn>
+                <span>显示联系信息</span>
+
+                <ion-icon name="chevron-down"></ion-icon>
+            </button>
+
+        </div>
+
+        <div class="sidebar-info_more">
+
+            <div class="separator"></div>
+
+            <ul class="contacts-list">
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">邮箱</p>
+
+                        <a href="mailto:richard@example.com" class="contact-link">15518936755@163.com</a>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">电话</p>
+
+                        <a href="tel:15518936755" class="contact-link">(+86) 15518936755</a>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">年龄</p>
+
+                        <time datetime="2003-01-27">Jan 27, 2003</time>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">户籍</p>
+
+                        <address>河南 南阳</address>
+                    </div>
+
+                </li>
+
+            </ul>
+
+            <div class="separator"></div>
+
+
+            <ul class="social-list">
+                <li><p style="font-size: xx-small;color:   hsl(35, 100%, 68%)">平台:</p></li>
+
+                <li class="social-item">
+                    <button class="social-link" onclick="showImg('weChat')">
+
+                        <ion-icon name="logo-wechat"></ion-icon>
+                    </button>
+                </li>
+
+                <li class="social-item">
+                    <a href="https://qm.qq.com/q/325YMHcHUk" class="social-link">
+                        <ion-icon name="logo-tux"></ion-icon>
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a href="https://www.douyin.com/user/MS4wLjABAAAAwDf_tw7oUf8wTyvq9xNwFA6kXoctDbGorrAO0Z3ZkJ4"
+                       class="social-link">
+                        <ion-icon name="logo-tiktok"></ion-icon>
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a href="https://github.com/Andyliya" class="social-link">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a href="https://gitee.com/andy294111" class="social-link">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </a>
+                </li>
+
+                <li><p style="font-size: xx-small;color:   hsl(35, 100%, 68%)">资助:</p></li>
+
+                <li class="social-item">
+                    <a onclick="showImg('zfbPay')" class="social-link">
+                        <ion-icon name="logo-alipay"></ion-icon>
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a onclick="showImg('wxPay')" class="social-link">
+                        <ion-icon name="logo-wechat"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="separator"></div>
+        <div class="sidebar-info">
+
+            <img id="weChat" src="./assets/images/weChat.jpg"
+                 style="  border-radius: 10px; width: 180px;  height: 180px; display: none;" alt="2941115494"/>
+
+            <img id="zfbPay" src="./assets/images/zfbPay.jpg"
+                 style="  border-radius: 10px; width: 180px;  height: 180px; display: none;" alt="2941115494"/>
+
+            <img id="wxPay" src="./assets/images/wxPay.jpg"
+                 style="  border-radius: 10px; width: 180px;  height: 180px; display: none;" alt="2941115494"/>
+
+        </div>
+    </aside>
+
+
+    <!--
+      - #右侧主要内容
+    -->
+
+    <div class="main-content">
+
+        <!--
+          - #NAVBAR
+        -->
+        <!------------------------------------------------------切换按钮------------------------------------------------------>
+        <nav class="navbar">
+
+            <ul class="navbar-list">
+
+                <li class="navbar-item">
+                    <button class="navbar-link  active" data-nav-link>个人信息</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>发展履历</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>项目作品</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>文章博客</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>查看简历</button>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!------------------------------------------------------个人信息------------------------------------------------------>
+
+        <article class="about  active" data-page="个人信息">
+
+            <header>
+                <h2 class="h2 article-title">关于我</h2>
+            </header>
+
+            <section class="about-text">
+                <h3 class="h3">我是</h3>
+                <p><strong>河南师范大学 软件学院 25届</strong>毕业生,在校认真学习专业知识并主动拓展相关编程技能,综合成绩优异,专业技能扎实;<br>
+                    拥有<strong>超聚变Java后端</strong>实习经验,熟悉企业级项目开发,积累丰富项目实战开发经验;<br>
+                    拥有多类个人学习项目,熟悉各类中间件的使用,可独立完成中小型项目开发.
+                </p>
+                <h3 class="h3">我拥有</h3>
+                <p>性格乐观开朗,<strong>情绪稳定</strong>,踏实能干,积极主动,对工作充满热情与期待;<br>
+                    有<strong>较强的学习能力</strong>和适应能力,能够快速补足技能空缺,不断提升和完善自己;<br>
+                    擅于独立思考和<strong>分析解决问题</strong>,勇于面对困难,积极主动解决问题;<br>
+                    拥有良好<strong>沟通和团队协作</strong>能力,积极在团队中贡献个人价值;<br>
+                    有较强的<strong>责任心和耐心</strong>,对待工作任务认真负责,不拖延不推诿,遵守规章制度;<br>
+                    <strong>热爱编程事业</strong>,主动提高个人能力和技术,能够满足开发工作的需要.
+                </p>
+                <h3 class="h3">我希望</h3>
+                <p>有机会<strong>加入</strong>到积极向上,团结协作的<strong>团队</strong>中去,参与到项目或系统的开发,贡献自己的技术和价值;<br>
+                    获得<strong>稳定</strong>的工作和<strong>发展</strong>机会,拥有更多的技术,接触更高的专业领域;<br>
+                    运用自己的技术技能技能投入到契合的开发工作,<strong>创造有价值的开发成果.</strong></p>
+                <h3 class="h3">我相信</h3>
+                <p>
+                    个人能力能够满足绝大多数的开发工作,能够在未来的发展道路中不断探索,不断进步,成为一名优秀的开发程序员,创造出更多有价值的成果.</p>
+            </section>
+
+
+            <!--
+              - service
+            -->
+
+            <section class="service">
+
+                <h3 class="h3 service-title">技术栈</h3>
+
+                <ul class="service-list">
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Java开发</h4>
+
+                            <p class="service-item-text">
+                                精通Java语言,熟悉常用的Java API,包括异常处理,数据结构,集合框架,网络编程,多线程,I/O,JDBC,XML等;
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Spring框架</h4>
+
+                            <p class="service-item-text">
+                                熟悉Spring框架,包括Spring MVC,Spring Boot,Spring
+                                Cloud,RuoYi,SpringSecurity等,能够根据业务需求进行系统设计和开发。
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">数据库</h4>
+
+                            <p class="service-item-text">
+                                熟悉主流数据库,如MySql,达梦,PostgreSQL及Redis,ElsasticSearch,Neo4j(图数据库)等,能够根据业务需求进行数据库设计和优化。
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">服务器</h4>
+
+                            <p class="service-item-text">
+                                拥有运维知识,熟悉Linux命令,shell脚本,掌握Docker容器技术,熟悉常用中间件的多节点搭建和配置;
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Web前端开发</h4>
+
+                            <p class="service-item-text">
+                                熟悉HTML,CSS,JavaScript和Vue,Vite框架,能够使用Pinia,ElementPlus进行开发。
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">网络编程</h4>
+
+                            <p class="service-item-text">
+                                理解TCP/IP和UDP协议工作原理,了解HTTP,HTTPS,FTP等协议;
+                            </p>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <!--
+              - testimonials
+            -->
+
+            <section class="testimonials">
+
+                <h3 class="h3 testimonials-title">同事评价</h3>
+
+                <ul class="testimonials-list has-scrollbar">
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60"
+                                     data-testimonials-avatar>
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>同事老王</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    “Andy的技术能力很强，他熟悉 Java
+                                    开发技术，能够快速上手新项目，并且能够解决项目中遇到的技术难题。此外他对于功能的实现及问题的解决比较有经验,在开发周期内将功能得以很好地实现.。”
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60"
+                                     data-testimonials-avatar>
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>同事小杨</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    “Andy 的学习能力强，他总是能够快速学习新技术，并将其应用到项目中。同时他还他乐于分享自己的知识，经常在技术分享会中交流经验，帮助团队成员解决问题,提升技术能力。”
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img src="./assets/images/avatar-4.png" alt="Emily evans" width="60"
+                                     data-testimonials-avatar>
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>经理涂总</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    “他工作认真负责，积极主动，能够按时完成任务，并且保证代码质量。还具备良好的项目管理能力，能够合理规划项目进度，与团队成员保持良好的沟通，及时了解项目进展情况，并根据实际情况进行调整。并进行有效的风险控制。
+                                    ”
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img src="./assets/images/my-avatar.png" alt="Henry william" width="60"
+                                     data-testimonials-avatar>
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>主管李老师</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    张三在工作中表现出了极高的专业素养，他对待任务总是认真负责，能够准时完成项目节点，并且经常超出预期地解决问题。不仅自己的技术能力强，还乐于帮助同事，经常能看到他耐心地指导新成员，提升了整个团队的技术水平。
+                                    张三具有持续学习的热情，他总是关注行业动态，学习最新技术，并将所学应用到实际工作中，不断提升自己的技术深度和广度。他在项目中的成长非常快，从一名普通的开发者逐渐成长为团队中的技术骨干，他的进步有目共睹。
+                                    总的来说，张三是一位非常优秀的 Java
+                                    程序员，他的技术能力、工作态度和团队精神都值得赞扬。他的存在极大地提升了我们团队的技术实力和项目质量。我相信，张三将继续在技术道路上不断前进，为团队和公司创造更多价值。
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <!--
+              - 奖状模态
+            -->
+
+            <div class="modal-container" data-modal-container>
+
+                <div class="overlay" data-overlay></div>
+
+                <section class="testimonials-modal">
+
+                    <button class="modal-close-btn" data-modal-close-btn>
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                    <div class="modal-img-wrapper">
+                        <figure class="modal-avatar-box">
+                            <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                        </figure>
+
+                        <img src="./assets/images/icon-quote.svg" alt="quote icon">
+                    </div>
+
+                    <div class="modal-content">
+
+                        <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                        <time datetime="2021-06-14">21 Jun, 2003</time>
+
+                        <div data-modal-text>
+                            <p>
+                                Richard被聘请来创建一个企业形象，我们对她所做的工作非常满意，她有很多经验，非常关心客户的需求，包括客户的需求、客户的需求、客户的需求、客户的需求、客户的需求、客户的需求、客户的需求、客户的需求等
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <section class="skill">
+
+                <h3 class="h3 skills-title">掌握情况</h3>
+
+                <ul class="skills-list content-card">
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Java 开发</h5>
+                            <data value="90">90%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 90%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Spring框架</h5>
+                            <data value="85">85%</data>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 85%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">组件及数据库</h5>
+                            <data value="80">80%</data>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 80%;"></div>
+                        </div>
+
+                    </li>
+
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">WEB前端开发</h5>
+                            <data value="30">30%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 30%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">服务器运维</h5>
+                            <data value="20">20%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 20%;"></div>
+                        </div>
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">其他技能</h5>
+                            <data value="60">60%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 60%;"></div>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
+
+
+        <!--
+          - #RESUME
+        -->
+
+        <article class="resume" data-page="发展履历">
+
+            <header>
+                <h2 class="h2 article-title">发展履历</h2>
+            </header>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3">河南师范大学<span style="font-size: 16px;color: grey"><small
+                            style="color: rgb(204, 180, 100)">本科&nbsp;&nbsp;&nbsp;</small>河南 新乡</span></h3>
+                </div>
+
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">软件学院-计算机科学与技术</h4>
+
+                        <span>2021.09 —  2025.07</span>
+
+                        <p class="timeline-text">
+                            移动开发方向,主修Java语言,完成学业并拓展专业知识和技术,专业成绩优异;<br/>
+                            掌握Web开发，软件工程，操作系统，数据结构算法、网络工程等技术.
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">大学生通讯社-记者部部长</h4>
+
+                        <span>2021 — 2023</span>
+
+                        <p class="timeline-text">
+                            于21年加入大学生通讯社记者部,和摄影部组成大学生通讯社;<br/>
+                            部门负责学校新闻的拍摄和报道,校园心声的采访,校园记录类视频的拍摄工作;<br/>
+                            参与多次部门实践活动,取得一定成果,于22年成为记者部部长,于23年获得优秀部门干事称号.
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">个人项目-添妙电商平台</h4>
+
+                        <span>2023.10-2023.11</span>
+
+                        <p class="timeline-text">
+                            提供移动端在线购物和web后台管理的购物平台系统,并设有管理员后台;<br/>
+                            移动端App为用户提供商品浏览,下单,支付,管理等功能;<br/>
+                            web端后台为商家提供商品、订单、发货地址的发布和管理等功能;
+                        </p>
+
+                    </li>
+
+                </ol>
+
+            </section>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3">超聚变数字技术有限公司<span style="font-size: 16px;color: grey"><small
+                            style="color: rgb(204, 180, 100)">实习&nbsp;&nbsp;&nbsp;</small>河南 郑州</span></h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">城企数字事业部-Java后端</h4>
+
+                        <span>2024.04 — 2024.09</span>
+
+                        <p class="timeline-text">
+                            郑州超聚变技术有限公司是一家专注于算力基础设施和服务的公司，提供计算机软硬件及相关技术产品，服务于多个行业，并在全球设有研发和服务中心。
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">一道墙-安全运营支撑平台(WEB,大屏) </h4>
+
+                        <span>项目描述</span>
+
+
+                        <p class="timeline-text">
+                            对承接开发项目“一道墙-安全运营支撑平台”部分功能模块的开发,项目主要为客户提供敏感数据、威胁、漏洞、安全事件的扫描采集与管理并响应生成处理方案的网络安全防护平台。
+                        </p>
+
+                        <span>工作内容</span>
+                        <p class="timeline-text">
+                            1. 负责 安全运营知识库、运维监控、安全实体分析 模块的系统设计、功能开发和维护;<br/>
+                            2. 使用MinIO 和Apache POI 实现文件(图片，附件等）上传、存储、解析,并设置访问限制;<br/>
+                            3. 通过Prometheus、Hertzbeat 和 SSH/SNAP 协议进行系统（服务器，进程，服务，组件）监控，并实现指标异常响应;<br/>
+                            4. 利用图数据库和ES实现实体信息的检索和树状图谱解析，实现实体间关系的可视化展示;<br/>
+                            5. 调用外部接口，消息系统，缓存和数据存储机制，加密机制等实现其他业务功能;<br/>
+                            6. 进行文档整理，接口联调，脚本编写，项目部署，单元测试及功能优化，版本迭代等.
+                        </p>
+                        <span>工作成果</span>
+                        <p class="timeline-text">
+                            1. 顺利完成负责模块的开发，通过测试且在稳定版本成功交付;<br/>
+                            2. 运维监控模块利用不同监控协议实现对项目平台涉及的操作系统环境和各组件、各服务运行状态的稳定监测;<br/>
+                            3. 安全实体分析模块利用图数据库和ES实现实体信息的检索和树状图谱解析，并实现实体间关系的可视化展示;<br/>
+                            4. 安全运营知识库模块实现平台文章的发布管理,并实现文章的检索和展示,同时提供平台的公告广播置顶等功能;<br/>
+                            5. 收到主管和同事的广泛认可,被授予开发组星光奖.
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">未来规划</h4>
+
+                        <span>             </span>
+
+                        <p class="timeline-text">
+                            1. 寻找合适工作,投入事业发展;<br/>
+                            2. 继续深入学习软件开发技术,提升自己的技术能力;<br/>
+                            3. 积极探索和参与技术社区,与同行交流学习.<br/>
+                        </p>
+
+                    </li>
+                </ol>
+
+            </section>
+
+            <!--
+              - clients
+            -->
+            <!-------------------------------------------------------履历概览----------------------------------------------------->
+            <section class="clients">
+
+                <h3 class="h3 clients-title">履历概览</h3>
+
+                <ul class="clients-list has-scrollbar">
+
+                    <li class="clients-item">
+                        <a href="https://www.htu.edu.cn" title="河南师范大学主页">
+                            <img src="./assets/images/logo-htu.png" alt="client logo">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="https://www.htu.edu.cn/sw/main.htm" title="河南师范大学软件学院主页">
+                            <img src="./assets/images/logo-htu3.png" alt="client logo">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="https://100.htu.edu.cn/main.htm" title="河南师范大学校园主页">
+                            <img src="./assets/images/logo-htu2.png" alt="client logo">
+                        </a>
+                    </li>
+
+
+                    <li class="clients-item">
+                        <a href="https://www.xfusion.com" title="超聚变数字技术有限公司主页">
+                            <img src="./assets/images/logo-xfusion.svg" alt="client logo">
+                        </a>
+                    </li>
+
+
+                    <li class="clients-item">
+                        <a href="https://www.qinwei.com" title="河南秦尉数字技术有限公司官网">
+                            <img src="./assets/images/logo-qw.svg" alt="client logo" >
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="https://www.an-dy.us.kg" title="Andy的个人网页">
+                            <img src="./assets/images/logo.png" alt="client logo">
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
+
+
+        <!--
+          - #PORTFOLIO
+        -->
+        <!------------------------------------------------------项目作品------------------------------------------------------>
+        <article class="portfolio" data-page="项目作品">
+
+            <header>
+                <h2 class="h2 article-title">作品集</h2>
+            </header>
+
+            <section class="projects">
+
+                <ul class="filter-list">
+
+                    <li class="filter-item">
+                        <button class="active" data-filter-btn>All</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>Web</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>App</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>Others</button>
+                    </li>
+
+                </ul>
+
+                <div class="filter-select-box">
+
+                    <button class="filter-select" data-select>
+
+                        <a class="select-value" data-selecct-value>Select category</a>
+
+                        <a class="select-icon">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </a>
+
+                    </button>
+
+                    <ul class="select-list">
+
+                        <li class="select-item">
+                            <button data-select-item>All</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Web</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>App</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Others</button>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="project-list">
+
+                    <li class="project-item  active" data-filter-item data-category="web">
+                        <a href="https://web.an-dy.dpdns.org/tmiao">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-1.jpg" alt="finance">
+                            </figure>
+
+                            <h3 class="project-title">Tmiao电商平台-Web</h3>
+
+                            <p class="project-category">Web 电商管理后台</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="app">
+                        <a href="https://web.an-dy.dpdns.org/tmiao">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-8.jpg" alt="orizon">
+                            </figure>
+
+                            <h3 class="project-title">Tmiao电商平台-App</h3>
+
+                            <p class="project-category">App 电商购物平台</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web">
+                        <a href="https://www.an-dy.dpdns.org/person">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-home.png" alt="fundo" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">个人主页-介绍</h3>
+
+                            <p class="project-category">Web 个人介绍主页</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="app">
+                        <a href="https://web.an-dy.dpdns.org/douyin">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-dy.png" alt="brawlhalla" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">仿抖音-学习修改版</h3>
+
+                            <p class="project-category">App
+                                源自大佬zyrono并进行修改的仿照抖音页面的短视频平台,仅用于学习</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="app">
+                        <a href="https://blog.an-dy.dpdns.org/">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-3.jpg" alt="dsm." loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">GitHub博客</h3>
+
+                            <p class="project-category">Web/App 依托于GitHub-Pages搭建的个人博客</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web">
+                        <a href="https://web.an-dy.dpdns.org/admin">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-2.png" alt="metaspark" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">服务器仪表盘</h3>
+
+                            <p class="project-category">Web 个人服务器管理后台</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web">
+                        <a href="https://web.an-dy.dpdns.org/proxy">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-proxy.png" alt="summary" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">GitHub代理</h3>
+
+                            <p class="project-category">Web 用于拉取仓库和依赖的代理,仅限个人使用</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web">
+                        <a href="https://web.an-dy.dpdns.org/nacos">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-nacos.png" alt="task manager" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Nacos工具</h3>
+
+                            <p class="project-category">Web Nacos远程调用工具,仅限个人使用</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web">
+                        <a href="https://web.an-dy.dpdns.org/images">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-image.png" alt="arrival" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">图床</h3>
+
+                            <p class="project-category">Web 个人的图片上传管理存储库</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="others">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">其他项目</h3>
+
+                            <p class="project-category">Web 开发中的项目暂未收录</p>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
+
+
+        <!--
+          - #BLOG
+        -->
+        <!------------------------------------------------------文章博客------------------------------------------------------>
+        <article class="blog" data-page="文章博客">
+
+            <header>
+                <h2 class="h2 article-title">文章博客</h2>
+            </header>
+
+            <section class="blog-posts">
+
+                <ul class="blog-posts-list">
+
+                    <li class="blog-post-item">
+                        <a href="https://www.yuque.com/u42351543">
+
+                            <figure class="blog-banner-box">
+                                <img src="./assets/images/blog-yq.png" alt="Design conferences in 2022" loading="lazy">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">笔记</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">语雀-笔记</h3>
+
+                                <p class="blog-text">
+                                    Andy的语雀笔记.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="https://www.yuque.com/u42351543">
+
+                            <figure class="blog-banner-box">
+                                <img src="./assets/images/blog-po.png" alt="Best fonts every designer" loading="lazy">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">脑图-思维导图</h3>
+
+                                <p class="blog-text">
+                                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="https://github.com/andyliya">
+
+                            <figure class="blog-banner-box">
+                                <img src="./assets/images/blog-github.png" alt="Design digest #80" loading="lazy">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">Github上的分享</h3>
+
+                                <p class="blog-text">
+                                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam
+                                    corporis suscipit.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="https://blog.csdn.net/Andy6564">
+
+                            <figure class="blog-banner-box">
+                                <img src="./assets/images/blog-csdn.png" alt="UI interactions of the week"
+                                     loading="lazy">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">CSDN上的笔记</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">CSDN上的笔记</h3>
+
+                                <p class="blog-text">
+                                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco
+                                    laboris nisi.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="https://leetcode.cn/u/andyliya/">
+
+                            <figure class="blog-banner-box">
+                                <img src="./assets/images/blog-leetcode.png" alt="The forgotten art of spacing"
+                                     loading="lazy">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">LeetCode上的刷题笔记</h3>
+
+                                <p class="blog-text">
+                                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img src="./assets/images/blog-others.png" alt="Design digest #79" loading="lazy">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">其他文章</h3>
+
+                                <p class="blog-text">
+                                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
+
+
+        <!--
+          - #CONTACT
+        -->
+        <!------------------------------------------------------联系方式------------------------------------------------------>
+        <article class="contact" data-page="查看简历">
+            <header>
+                <h2 class="h2 article-title">查看简历</h2>
+            </header>
+            <div style="display: flex;">
+                <button style="color: goldenrod;"
+                        onclick="document.getElementById('resumeImage').style.display =document.getElementById('resumeImage').style.display=== 'none' ? 'block' : 'none';">
+                    预览简历
+                </button>
+                <a style="color: gold;" href="./assets/pdf/resume.pdf" download="resume.pdf">&nbsp;| 下载简历</a>
+            </div>
+            <figure class="project-img" id="resumeImage" style="display: none;">
+                <img src="./assets/images/resume.png" alt="resume" loading="lazy">
+            </figure>
+        </article>
+
+    </div>
+
+
+</main>
+
+
+<!--
+  - custom js link
+-->
+<script src="./assets/js/script.js">
+
+</script>
+
+<!--
+  - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="./assets/js/ionicons.esm.js"></script>
+<script nomodule src="./assets/js/ionicons.js"></script>
+<!--<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>-->
+<script>
+    function checkPassword() {
+        const urlParams = new URLSearchParams(window.location.search);
+        let password = urlParams.get('password');
+        const x=100, y=10;
+        const the=String.fromCharCode(...[x-3, x+y, x, x+2*y+1]);
+        const overlay = document.getElementById('overlay');
+        if (password === null) {
+            password = prompt("为阻止恶意访问,请输入校验口令：");
+        }
+        if (password === the) {
+            overlay.style.display = "none";
+        } else {
+            alert("口令错误！请联系管理员获取口令:微信2941115494");
+            while (confirm("是否重新输入?")) {
+                password = prompt("为阻止恶意访问,请输入校验口令：");
+                if (password === the) {
+                    overlay.style.display = "none";
+                    return; // 成功匹配后直接返回
+                }
+            }
+            alert("请联系开发者获取查看口令:微信2941115494");
+        }
+    }
+
+    window.onload = checkPassword;
+
+    function showImg(param) {
+        const qrcode = document.getElementById(param);
+        const qrcode1 = document.getElementById('wxPay');
+        const qrcode2 = document.getElementById('zfbPay');
+        const qrcode3 = document.getElementById('weChat');
+        if (qrcode.style.display === 'none') {
+            qrcode1.style.display = 'none';
+            qrcode2.style.display = 'none';
+            qrcode3.style.display = 'none';
+            qrcode.style.display = 'block'; // 显示二维码
+        } else {
+            qrcode.style.display = 'none'; // 隐藏二维码
+        }
+    }
+
+    function unShowImg() {
+        document.getElementById('wxPay').style.display = 'none';
+
+        document.getElementById('zfbPay').style.display = 'none';
+
+        document.getElementById('weChat').style.display = 'none';
+
+    }
+
+</script>
+
+
+</body>
+
+
+</html>
